@@ -8,10 +8,17 @@
   </head>
   <body></body>
   <script>
+    /**
+     * Algorithm
+     * 1. handle edgecase with converting input into parseint and checking NaN with isNaN (return Please Enter Proper Number)
+     * 2. create a variable output to store the value
+     * 3. loop upto input and multiply output to i
+     * 4. return output
+     * */
     function Factorial(num) {
       const value = parseInt(num);
       if (isNaN(value)) {
-        return "Please Enter Number";
+        return "Please Enter Proper Number";
       }
       let output = 1;
       for (let i = 1; i <= value; i++) {
